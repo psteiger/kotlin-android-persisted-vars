@@ -20,6 +20,9 @@ We can reduce the boilerplate and simplify all of those cases to, for example:
 ```
 var x by persisted.Int(0)
 ```
+
+By using Kotlin's delegates and a bit of reflection.
+
 ## Quick links
 
 ### `Persisted` Use-Case
@@ -29,4 +32,3 @@ https://github.com/psteiger/kotlin-android-persisted-vars/blob/master/app/src/ma
 ### `Persisted` Implementation
 
 https://github.com/psteiger/kotlin-android-persisted-vars/blob/master/app/src/main/java/com/freelapp/persistedvars/Persisted.kt
-
