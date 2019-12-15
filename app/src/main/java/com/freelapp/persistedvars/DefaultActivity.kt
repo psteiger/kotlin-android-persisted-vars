@@ -18,7 +18,11 @@ class DefaultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.default_activity)
+
+        // Will read from and write to SharedPreferences
         timesStarted++
+
+        // Verify it worked. Will read from SharedPreferences.
         times_started_value.text = timesStarted.toString()
         Log.d("PersistedDebug", "timesStarted: $timesStarted")
     }
