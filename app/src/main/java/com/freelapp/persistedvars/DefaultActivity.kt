@@ -8,6 +8,11 @@ import kotlinx.android.synthetic.main.default_activity.*
 
 class DefaultActivity : AppCompatActivity() {
 
+    /**
+     * This var will be backed by SharedPreferences. The value will be persisted on disk and will
+     * survive app restarts. In this example '0' is the initial/default value. In the
+     * SharedPreferences file, the key name will be the var name: { 'timesStarted' : 0 }
+     */
     var timesStarted by persisted.Int(0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
